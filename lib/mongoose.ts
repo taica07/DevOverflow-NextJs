@@ -30,7 +30,7 @@ const dbConnect = async (): Promise<Mongoose> => {
   if (!cached.promise) {
     cached.promise = mongoose
       .connect(MONGODB_URI, {
-        dbName: "devflow",
+        dbName: "DevOverflow-NextJs",
       })
       .then((result) => {
         console.log("Connected to MongoDB");
